@@ -1,0 +1,126 @@
+
+/*Футер (иконки, ссылки)*/
+.site-footer {
+    background: var(--footer-up);
+    margin-top: auto;
+}
+
+.footer-section {
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+    .footer-section.footer-social {
+        background-color: var(--footer-up);
+    }
+
+    .footer-section.footer-links {
+        background-color: var(--footer-mid);
+    }
+
+    .footer-section.footer-copyright {
+        background-color: var(--footer-end);
+        padding: 1rem 0;
+    }
+
+.footer-content {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+.social-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.social-icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-size: contain;
+    transition: transform var(--transition-normal);
+}
+
+    .social-icon:hover {
+        transform: translateY(-5px);
+    }
+
+    .social-icon.youtube {
+        background-image: url('/images/link-icons/youtube.png');
+        transition: var(--transition-normal);
+    }
+
+        .social-icon.youtube:hover {
+            background-image: url('/images/link-icons/youtube-hover.png');
+        }
+
+    .social-icon.discord {
+        background-image: url('/images/link-icons/discord.png');
+        transition: var(--transition-normal);
+    }
+
+        .social-icon.discord:hover {
+            background-image: url('/images/link-icons/discord-hover.png');
+        }
+
+    .social-icon.vk {
+        background-image: url('/images/link-icons/vk.png');
+        transition: var(--transition-normal);
+    }
+
+        .social-icon.vk:hover {
+            background-image: url('/images/link-icons/vk-hover.png');
+        }
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-nav-link {
+    color: var(--text-gray);
+    position: relative;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+    .footer-nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--text-green);
+        transition: width var(--transition-normal);
+    }
+
+    .footer-nav-link:hover {
+        color: var(--text-green);
+    }
+
+        .footer-nav-link:hover::after {
+            width: 100%;
+        }
+
+.copyright-text {
+    font-size: 1rem;
+    text-align: center;
+}

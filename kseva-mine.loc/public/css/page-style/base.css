@@ -1,0 +1,47 @@
+/*База базная*/
+:root {
+    /* Цветовая схема */
+    /* Фоны */
+    --bg-dark: #171615;
+    --bg-header: rgba(38, 36, 35, 0.9);
+    --header-solid: #262423;
+    --footer-up: #000;
+    --footer-mid: #222;
+    --footer-end: #333;
+    /* Цвета шрифтов */
+    --highlight-blue-header: #6495ed;
+    --highlight-red-login-box: #b02727;
+    --text-blue-ver-1: #8368EE;
+    --text-blue-ver-2: #B9AAF7;
+    --text-orange-ver-1: #FFE05C;
+    --text-orange-ver-2: #FFFC5C;
+    --text-white: #fff;
+    --text-gray: #ddd;
+    --text-green: #4CAF50;
+    /* Размеры */
+    --header-height-mobile: 60px;
+    --container-max: 2100px;
+    /* Тени */
+    --shadow-sm: 0 2px 5px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+    --shadow-hd: 0 4px 0 rgba(0,0,0,0.2);
+    /* Анимации */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg-dark);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset=utf-8 />
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <title>KsevaMine: Обратная связь</title>
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link href="/css/page-style/base.css" rel="stylesheet">
+    <link href="/css/page-style/header-os.css" rel="stylesheet">
+    <link href="/css/page-style/css-for-feedback-page.css" rel="stylesheet">
+    <link href="/css/page-style/footer-os.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/images/logo/main-logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a class="nav-btn" href="/index.php">Главная</a></li>
+                    <li><a class="nav-btn" href="/pages/dynmap.html">Карта</a></li>
+                    <li><a class="nav-btn" href="/pages/forum.html">Форум</a></li>
+                    <li><a class="nav-btn" href="/pages/updates.html">Обновления</a></li>
+                </ul>
+            </nav>
+            <a class="login-btn" href="/pages/login in/login-in.php">Войти</a>
+        </div>
+    </header>
+    <main>
+        <div class="bg-image-feedback-forum">
+            <div class="info-table-feedback">
+                <h1>Обратитесь к нам напрямую с вашим вопросом!</h1>
+                <h2>
+                    Мы делаем всё, чтобы улучшить качество проекта!
+                </h2>
+                <p>
+                    *Во избежании долгого ожидания вы можете найти
+                    ответы на частозадаваемые вопросы игроков на
+                    <a class="link-to-forum" href="/pages/forum.html">форуме</a>
+                    нашего сайта. Мы очень рады, что вы обращаетесь к нам с вашими
+                    вопросами
+                </p>
+            </div>
+        </div>
+        <div class="feedback-image-main-container">
+            <div class="feedback-form-container">
+                <form action="/pages/feedback in/feedback-form.php" method="post">
+                    <h1>Форма обратной связи</h1>
+                    <fieldset>
+                        <legend>Your nickname *</legend>
+                        <input class="input-area" type="text" name="nickname" id="nickname" maxlength="50" autocomplete="nickname" />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email *</legend>
+                        <input class="input-area" type="email" name="email" id="email" maxlength="100" autocomplete="email" />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Сообщение *</legend>
+                        <textarea class="input-area" name="user_message" id="user_message" maxlength="500" autocomplete="off"></textarea>
+                    </fieldset>
+                    <div class="btn-succes">
+                        <button class="submit-btn" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section footer-social">
+                <div class="footer-content-title">
+                    <h2 class="social-title">Можете найти нас здесь</h2>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon youtube" title="KsevaMine на YouTube"></a>
+                        <a href="#" class="social-icon discord" title="KsevaMine в Discord"></a>
+                        <a href="#" class="social-icon vk" title="KsevaMine на VK"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section footer-links">
+                <div class="footer-content">
+                    <nav class="footer-nav">
+                        <a href="/pages/rules.html" class="footer-nav-link">Правила сервера</a>
+                        <a href="/pages/feedback-form.html" class="footer-nav-link">Связаться с нами</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-section footer-copyright">
+                <div class="footer-content">
+                    <p class="copyright-text">© 2025 KsevaMine. Все права защищены!</p>
+                    <p class="copyright-text">Оригинальные права принадлежат Mojang AB</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
